@@ -138,7 +138,7 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding: 6rem 2rem 4rem;
+      padding: 6rem 2rem 8rem;
       position: relative;
       overflow: hidden;
     }
@@ -951,6 +951,22 @@
     }
     .lightbox-close:hover { opacity: 1; }
 
+    /* ── HERO CAKE POP FENCE ── */
+    .hero-fence {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+      z-index: 3;
+    }
+    .hero-fence svg {
+      display: block;
+      width: 100%;
+      height: 130px;
+    }
+
     /* ── RESPONSIVE ── */
     @media (max-width: 768px) {
       nav { padding: 0 1.25rem; }
@@ -1003,6 +1019,215 @@
     <p class="hero-tagline">"New to the Cake Pop world, coming in with<br/>a lot of enthusiasm and not a lot of skill."</p>
     <a class="hero-cta" href="#order">Place an Order</a>
   </div>
+
+  <!-- Cake pop fence divider -->
+  <div class="hero-fence">
+    <svg viewBox="0 0 1440 130" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <!-- Single cake pop symbol: ball + stick, coral pink -->
+        <!-- Ball center at 0,0 radius 28, stick goes down 55px -->
+      </defs>
+
+      <!-- We tile 18 cake pops across 1440px = 80px each, staggered heights -->
+      <!-- Each pop: circle (r=26) with drizzle detail, stick below -->
+
+      <!-- Pop 1 x=40 -->
+      <g transform="translate(40, 95)">
+        <rect x="-4" y="0" width="8" height="52" rx="4" fill="#e8785a" opacity="0.55"/>
+        <circle cx="0" cy="-28" r="26" fill="#e8785a"/>
+        <circle cx="0" cy="-28" r="26" fill="none" stroke="#c45c3f" stroke-width="1.5" opacity="0.4"/>
+        <path d="M-12,-22 Q-4,-16 4,-22 Q12,-28 14,-18" stroke="#c45c3f" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
+        <circle cx="-8" cy="-36" r="2.5" fill="#fdf6ec" opacity="0.4"/>
+        <circle cx="6" cy="-40" r="2" fill="#fdf6ec" opacity="0.4"/>
+        <circle cx="10" cy="-28" r="2" fill="#fdf6ec" opacity="0.35"/>
+      </g>
+
+      <!-- Pop 2 x=120 taller -->
+      <g transform="translate(120, 80)">
+        <rect x="-4" y="0" width="8" height="68" rx="4" fill="#e8785a" opacity="0.5"/>
+        <circle cx="0" cy="-30" r="28" fill="#e8785a"/>
+        <circle cx="0" cy="-30" r="28" fill="none" stroke="#c45c3f" stroke-width="1.5" opacity="0.4"/>
+        <path d="M-14,-24 Q-5,-17 5,-24 Q14,-31 16,-20" stroke="#c45c3f" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.5"/>
+        <circle cx="-10" cy="-40" r="3" fill="#fdf6ec" opacity="0.4"/>
+        <circle cx="8" cy="-44" r="2.5" fill="#fdf6ec" opacity="0.35"/>
+        <circle cx="12" cy="-30" r="2" fill="#fdf6ec" opacity="0.3"/>
+      </g>
+
+      <!-- Pop 3 x=200 short -->
+      <g transform="translate(200, 105)">
+        <rect x="-3.5" y="0" width="7" height="42" rx="3.5" fill="#e8785a" opacity="0.6"/>
+        <circle cx="0" cy="-24" r="22" fill="#e8785a"/>
+        <circle cx="0" cy="-24" r="22" fill="none" stroke="#c45c3f" stroke-width="1.5" opacity="0.4"/>
+        <path d="M-10,-20 Q-3,-14 4,-20 Q10,-26 12,-16" stroke="#c45c3f" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
+        <circle cx="-6" cy="-32" r="2" fill="#fdf6ec" opacity="0.4"/>
+        <circle cx="5" cy="-35" r="1.5" fill="#fdf6ec" opacity="0.35"/>
+      </g>
+
+      <!-- Pop 4 x=280 -->
+      <g transform="translate(280, 90)">
+        <rect x="-4" y="0" width="8" height="58" rx="4" fill="#e8785a" opacity="0.55"/>
+        <circle cx="0" cy="-27" r="25" fill="#e8785a"/>
+        <circle cx="0" cy="-27" r="25" fill="none" stroke="#c45c3f" stroke-width="1.5" opacity="0.4"/>
+        <path d="M-12,-22 Q-4,-15 4,-22 Q12,-28 13,-18" stroke="#c45c3f" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
+        <circle cx="-8" cy="-36" r="2.5" fill="#fdf6ec" opacity="0.4"/>
+        <circle cx="7" cy="-38" r="2" fill="#fdf6ec" opacity="0.35"/>
+        <circle cx="11" cy="-26" r="2" fill="#fdf6ec" opacity="0.3"/>
+      </g>
+
+      <!-- Pop 5 x=360 tallest -->
+      <g transform="translate(360, 72)">
+        <rect x="-4.5" y="0" width="9" height="76" rx="4.5" fill="#e8785a" opacity="0.5"/>
+        <circle cx="0" cy="-32" r="30" fill="#e8785a"/>
+        <circle cx="0" cy="-32" r="30" fill="none" stroke="#c45c3f" stroke-width="2" opacity="0.4"/>
+        <path d="M-15,-26 Q-5,-18 5,-26 Q15,-33 17,-22" stroke="#c45c3f" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.5"/>
+        <circle cx="-11" cy="-44" r="3" fill="#fdf6ec" opacity="0.4"/>
+        <circle cx="9" cy="-48" r="2.5" fill="#fdf6ec" opacity="0.35"/>
+        <circle cx="14" cy="-32" r="2.5" fill="#fdf6ec" opacity="0.3"/>
+        <circle cx="-4" cy="-50" r="2" fill="#fdf6ec" opacity="0.3"/>
+      </g>
+
+      <!-- Pop 6 x=440 -->
+      <g transform="translate(440, 98)">
+        <rect x="-4" y="0" width="8" height="50" rx="4" fill="#e8785a" opacity="0.55"/>
+        <circle cx="0" cy="-26" r="24" fill="#e8785a"/>
+        <circle cx="0" cy="-26" r="24" fill="none" stroke="#c45c3f" stroke-width="1.5" opacity="0.4"/>
+        <path d="M-11,-21 Q-4,-15 4,-21 Q11,-27 12,-17" stroke="#c45c3f" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
+        <circle cx="-7" cy="-34" r="2" fill="#fdf6ec" opacity="0.4"/>
+        <circle cx="6" cy="-37" r="1.8" fill="#fdf6ec" opacity="0.35"/>
+      </g>
+
+      <!-- Pop 7 x=520 -->
+      <g transform="translate(520, 85)">
+        <rect x="-4" y="0" width="8" height="63" rx="4" fill="#e8785a" opacity="0.5"/>
+        <circle cx="0" cy="-29" r="27" fill="#e8785a"/>
+        <circle cx="0" cy="-29" r="27" fill="none" stroke="#c45c3f" stroke-width="1.5" opacity="0.4"/>
+        <path d="M-13,-23 Q-4,-16 4,-23 Q13,-30 15,-19" stroke="#c45c3f" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
+        <circle cx="-9" cy="-39" r="2.5" fill="#fdf6ec" opacity="0.4"/>
+        <circle cx="7" cy="-42" r="2" fill="#fdf6ec" opacity="0.35"/>
+        <circle cx="11" cy="-28" r="2" fill="#fdf6ec" opacity="0.3"/>
+      </g>
+
+      <!-- Pop 8 x=600 short -->
+      <g transform="translate(600, 108)">
+        <rect x="-3.5" y="0" width="7" height="40" rx="3.5" fill="#e8785a" opacity="0.6"/>
+        <circle cx="0" cy="-22" r="20" fill="#e8785a"/>
+        <circle cx="0" cy="-22" r="20" fill="none" stroke="#c45c3f" stroke-width="1.5" opacity="0.4"/>
+        <path d="M-9,-18 Q-3,-13 3,-18 Q9,-23 10,-15" stroke="#c45c3f" stroke-width="1.8" fill="none" stroke-linecap="round" opacity="0.5"/>
+        <circle cx="-5" cy="-29" r="1.8" fill="#fdf6ec" opacity="0.4"/>
+        <circle cx="5" cy="-31" r="1.5" fill="#fdf6ec" opacity="0.35"/>
+      </g>
+
+      <!-- Pop 9 x=680 -->
+      <g transform="translate(680, 88)">
+        <rect x="-4" y="0" width="8" height="60" rx="4" fill="#e8785a" opacity="0.55"/>
+        <circle cx="0" cy="-28" r="26" fill="#e8785a"/>
+        <circle cx="0" cy="-28" r="26" fill="none" stroke="#c45c3f" stroke-width="1.5" opacity="0.4"/>
+        <path d="M-12,-22 Q-4,-16 4,-22 Q12,-28 14,-18" stroke="#c45c3f" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
+        <circle cx="-8" cy="-38" r="2.5" fill="#fdf6ec" opacity="0.4"/>
+        <circle cx="7" cy="-40" r="2" fill="#fdf6ec" opacity="0.35"/>
+        <circle cx="11" cy="-27" r="2" fill="#fdf6ec" opacity="0.3"/>
+      </g>
+
+      <!-- Pop 10 x=760 tall -->
+      <g transform="translate(760, 76)">
+        <rect x="-4.5" y="0" width="9" height="72" rx="4.5" fill="#e8785a" opacity="0.5"/>
+        <circle cx="0" cy="-31" r="29" fill="#e8785a"/>
+        <circle cx="0" cy="-31" r="29" fill="none" stroke="#c45c3f" stroke-width="2" opacity="0.4"/>
+        <path d="M-14,-25 Q-5,-17 5,-25 Q14,-32 16,-21" stroke="#c45c3f" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.5"/>
+        <circle cx="-10" cy="-43" r="3" fill="#fdf6ec" opacity="0.4"/>
+        <circle cx="8" cy="-46" r="2.5" fill="#fdf6ec" opacity="0.35"/>
+        <circle cx="13" cy="-30" r="2" fill="#fdf6ec" opacity="0.3"/>
+      </g>
+
+      <!-- Pop 11 x=840 -->
+      <g transform="translate(840, 95)">
+        <rect x="-4" y="0" width="8" height="53" rx="4" fill="#e8785a" opacity="0.55"/>
+        <circle cx="0" cy="-27" r="25" fill="#e8785a"/>
+        <circle cx="0" cy="-27" r="25" fill="none" stroke="#c45c3f" stroke-width="1.5" opacity="0.4"/>
+        <path d="M-12,-22 Q-4,-15 4,-22 Q12,-28 13,-18" stroke="#c45c3f" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
+        <circle cx="-7" cy="-36" r="2.5" fill="#fdf6ec" opacity="0.4"/>
+        <circle cx="6" cy="-39" r="2" fill="#fdf6ec" opacity="0.35"/>
+      </g>
+
+      <!-- Pop 12 x=920 short -->
+      <g transform="translate(920, 106)">
+        <rect x="-3.5" y="0" width="7" height="42" rx="3.5" fill="#e8785a" opacity="0.6"/>
+        <circle cx="0" cy="-23" r="21" fill="#e8785a"/>
+        <circle cx="0" cy="-23" r="21" fill="none" stroke="#c45c3f" stroke-width="1.5" opacity="0.4"/>
+        <path d="M-10,-19 Q-3,-13 3,-19 Q10,-25 11,-16" stroke="#c45c3f" stroke-width="1.8" fill="none" stroke-linecap="round" opacity="0.5"/>
+        <circle cx="-6" cy="-31" r="2" fill="#fdf6ec" opacity="0.4"/>
+        <circle cx="5" cy="-33" r="1.5" fill="#fdf6ec" opacity="0.35"/>
+      </g>
+
+      <!-- Pop 13 x=1000 -->
+      <g transform="translate(1000, 82)">
+        <rect x="-4" y="0" width="8" height="66" rx="4" fill="#e8785a" opacity="0.5"/>
+        <circle cx="0" cy="-30" r="28" fill="#e8785a"/>
+        <circle cx="0" cy="-30" r="28" fill="none" stroke="#c45c3f" stroke-width="2" opacity="0.4"/>
+        <path d="M-13,-24 Q-4,-17 4,-24 Q13,-30 15,-20" stroke="#c45c3f" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.5"/>
+        <circle cx="-9" cy="-41" r="3" fill="#fdf6ec" opacity="0.4"/>
+        <circle cx="8" cy="-44" r="2.5" fill="#fdf6ec" opacity="0.35"/>
+        <circle cx="12" cy="-29" r="2" fill="#fdf6ec" opacity="0.3"/>
+      </g>
+
+      <!-- Pop 14 x=1080 -->
+      <g transform="translate(1080, 93)">
+        <rect x="-4" y="0" width="8" height="55" rx="4" fill="#e8785a" opacity="0.55"/>
+        <circle cx="0" cy="-27" r="25" fill="#e8785a"/>
+        <circle cx="0" cy="-27" r="25" fill="none" stroke="#c45c3f" stroke-width="1.5" opacity="0.4"/>
+        <path d="M-12,-21 Q-4,-15 4,-21 Q11,-27 13,-17" stroke="#c45c3f" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
+        <circle cx="-7" cy="-36" r="2.5" fill="#fdf6ec" opacity="0.4"/>
+        <circle cx="6" cy="-38" r="2" fill="#fdf6ec" opacity="0.35"/>
+        <circle cx="10" cy="-26" r="1.8" fill="#fdf6ec" opacity="0.3"/>
+      </g>
+
+      <!-- Pop 15 x=1160 tallest -->
+      <g transform="translate(1160, 74)">
+        <rect x="-4.5" y="0" width="9" height="74" rx="4.5" fill="#e8785a" opacity="0.5"/>
+        <circle cx="0" cy="-32" r="30" fill="#e8785a"/>
+        <circle cx="0" cy="-32" r="30" fill="none" stroke="#c45c3f" stroke-width="2" opacity="0.4"/>
+        <path d="M-15,-26 Q-5,-18 5,-26 Q15,-33 17,-22" stroke="#c45c3f" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.5"/>
+        <circle cx="-11" cy="-45" r="3" fill="#fdf6ec" opacity="0.4"/>
+        <circle cx="9" cy="-48" r="2.5" fill="#fdf6ec" opacity="0.35"/>
+        <circle cx="14" cy="-31" r="2.5" fill="#fdf6ec" opacity="0.3"/>
+        <circle cx="-3" cy="-50" r="2" fill="#fdf6ec" opacity="0.3"/>
+      </g>
+
+      <!-- Pop 16 x=1240 -->
+      <g transform="translate(1240, 100)">
+        <rect x="-4" y="0" width="8" height="48" rx="4" fill="#e8785a" opacity="0.55"/>
+        <circle cx="0" cy="-25" r="23" fill="#e8785a"/>
+        <circle cx="0" cy="-25" r="23" fill="none" stroke="#c45c3f" stroke-width="1.5" opacity="0.4"/>
+        <path d="M-10,-20 Q-3,-14 3,-20 Q10,-26 12,-16" stroke="#c45c3f" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
+        <circle cx="-6" cy="-33" r="2" fill="#fdf6ec" opacity="0.4"/>
+        <circle cx="5" cy="-35" r="1.8" fill="#fdf6ec" opacity="0.35"/>
+      </g>
+
+      <!-- Pop 17 x=1320 -->
+      <g transform="translate(1320, 87)">
+        <rect x="-4" y="0" width="8" height="61" rx="4" fill="#e8785a" opacity="0.5"/>
+        <circle cx="0" cy="-29" r="27" fill="#e8785a"/>
+        <circle cx="0" cy="-29" r="27" fill="none" stroke="#c45c3f" stroke-width="1.5" opacity="0.4"/>
+        <path d="M-13,-23 Q-4,-16 4,-23 Q13,-29 15,-19" stroke="#c45c3f" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
+        <circle cx="-9" cy="-39" r="2.5" fill="#fdf6ec" opacity="0.4"/>
+        <circle cx="7" cy="-42" r="2" fill="#fdf6ec" opacity="0.35"/>
+        <circle cx="12" cy="-28" r="2" fill="#fdf6ec" opacity="0.3"/>
+      </g>
+
+      <!-- Pop 18 x=1400 -->
+      <g transform="translate(1400, 96)">
+        <rect x="-4" y="0" width="8" height="52" rx="4" fill="#e8785a" opacity="0.55"/>
+        <circle cx="0" cy="-26" r="24" fill="#e8785a"/>
+        <circle cx="0" cy="-26" r="24" fill="none" stroke="#c45c3f" stroke-width="1.5" opacity="0.4"/>
+        <path d="M-11,-21 Q-4,-15 3,-21 Q10,-27 12,-17" stroke="#c45c3f" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
+        <circle cx="-7" cy="-34" r="2" fill="#fdf6ec" opacity="0.4"/>
+        <circle cx="5" cy="-37" r="1.8" fill="#fdf6ec" opacity="0.35"/>
+      </g>
+
+      <!-- Ground line / base -->
+      <rect x="0" y="128" width="1440" height="4" fill="#e8785a" opacity="0.2"/>
+    </svg>
+  </div>
 </section>
 
 <!-- ── ABOUT ── -->
@@ -1013,7 +1238,7 @@
         <div class="about-badge">
           <div class="badge-label">Woman-Owned · Local Business</div>
           <div class="badge-title">Made with love in Kannapolis, NC</div>
-          <p>We're a small, woman-owned cake pop shop born right here in Cabarrus County. Every pop is handmade with care — we might not have decades of pastry school behind us, but we've got passion and plenty of practice.</p>
+          <p>We're a small, woman-owned cake pop shop born right here in Rowan County. Every pop is handmade with care — we might not have decades of pastry school behind us, but we've got passion and plenty of practice.</p>
           <div class="about-contact">
             <a href="mailto:ktownkakepops@gmail.com">✉️ ktownkakepops@gmail.com</a>
             <a href="https://www.instagram.com/ktownkakepops/" target="_blank" rel="noopener">📸 @ktownkakepops</a>
@@ -1255,7 +1480,7 @@
             hCaptcha is handled automatically by Formspree on their end
             once you enable it in your form dashboard settings.
           -->
-          <form id="contactForm" action="https://formspree.io/f/xykvpjzp" method="POST">
+          <form id="contactForm" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
             <input type="hidden" name="_subject" value="New order inquiry from ktownkakepops.com" />
             <input type="hidden" name="_replyto" value="" id="replyToField" />
 
@@ -1286,7 +1511,7 @@
                  After setting up Formspree, enable hCaptcha in your form settings
                  and Formspree will validate it server-side automatically. -->
             <div class="form-captcha">
-              <div class="h-captcha" data-sitekey="029a7338-9a50-468c-b6ce-ccf82f38eaa0"></div>
+              <div class="h-captcha" data-sitekey="10000000-ffff-ffff-ffff-000000000001"></div>
             </div>
 
             <button type="submit" class="btn-submit" id="submitBtn">Send Message 🍭</button>
